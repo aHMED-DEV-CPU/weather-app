@@ -70,7 +70,7 @@ function displayWeatherData(data) {
 }
 
 async function getData(searchValue) {
-    let response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${searchValue}&days=3`);
+    let response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${searchValue}&days=3`);
     let data = await response.json()
     displayWeatherData(data)
 }
@@ -86,7 +86,7 @@ async function getData(searchValue) {
 async function showPosition(position) {
     let lat = position.coords.latitude;
     let lon = position.coords.longitude;
-    let response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${lat},${lon}&days=3`);
+    let response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${lat},${lon}&days=3`);
     let data = await response.json()
     displayWeatherData(data)
 }
