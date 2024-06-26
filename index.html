@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Start nav -->
+    <nav class="navbar navbar-expand-lg  py-5">
+        <div class="container">
+            <a class="navbar-brand d-flex " href="#">
+                <img src="images/logo@2x.png" alt="">
+                <div class="nav-text">
+                    <h1>Weather</h1>
+                    <span>tagline goes here</span>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="toggler"><i class="fa-solid fa-sliders"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Live cameras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Photos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact/contact.html" id="contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End nav -->
+    <!-- start banner -->
+    <div class="banner">
+        <div class="container">
+            <form class=" search position-relative" id="form">
+                <input type="text" placeholder="Find your location..." id="search">
+                <button id="submit">Find</button>
+            </form>
+        </div>
+        <!-- start cards -->
+        <div class="container collection-of-cards">
+            <div class="weather-container">
+                <div class="card-group rounded-cards">
+                    <div class="card border-0">
+                        <div class="card-head d-flex justify-content-between">
+                            <div class="day"></div>
+                            <div class="date"></div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="location" id="location"></h5>
+                            <div class="degree">
+                                <div class="number"><span id="temp"></span>
+                                    <sup>o</sup>
+                                    C
+                                </div>
+                            </div>
+                            <div class="weather-icon">
+                                <img src="" alt="" id="icon">
+                            </div>
+                            <p condition></p>
+                            <span class=" m-0"><img src="images/icon-umberella@2x.png" alt=""> <small id="humidity">
+                                </small> %</span>
+                            <span><img src="images/icon-wind@2x.png" alt=""><small id="wind"> </small>km/h</span>
+                            <span><img src="images/icon-compass@2x.png" alt=""><small> East</small></span>
+                        </div>
+                    </div>
+                    <div class="card border-0 middle">
+                        <div class="card-head  text-center">
+                            <div class="day"></div>
+                        </div>
+                        <div class="card-body text-center">
+                            <div class="weather-sec-icon">
+                                <img src="" alt="" sec-icon>
+                            </div>
+                            <div class="degree-sec">
+                                <div class="number">
+                                    <div max-degree class="d-inline-block"></div>
+                                    <sup>o</sup>
+                                    C
+                                </div>
+                            </div>
+                            <small>
+                                <div class="number">
+                                    <div min-degree class="d-inline-block"></div>
+                                    <sup>o</sup>
+                                </div>
+                            </small>
+                            <p condition></p>
+                        </div>
+                    </div>
+                    <div class="card border-0 third">
+                        <div class="card-head  text-center">
+                            <div class="day"></div>
+                        </div>
+                        <div class="card-body text-center">
+                            <div class="sec-icon">
+                                <img src="" alt="" sec-icon>
+                            </div>
+                            <div class="degree-sec">
+                                <div class="number ">
+                                    <div max-degree class="d-inline-block"></div>
+                                    <sup>o</sup>
+                                    C
+                                </div>
+                            </div>
+                            <small>
+                                <div class="number">
+                                    <div min-degree class="d-inline-block"></div>
+                                    <sup>o</sup>
+                                </div>
+                            </small>
+                            <p condition></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End cards -->
+        <!-- start footer -->
+        <footer>
+            <div class="container">
+                <div class="row mb-3 g-3 align-items-center">
+                    <div class="col-md-8">
+                        <form class=" search position-relative m-0">
+                            <input type="text" placeholder="Find your location...">
+                            <button>Subscribe</button>
+                        </form>
+                    </div>
+                    <div class="col-md-4">
+                        <ul class=" list-unstyled d-flex  justify-content-center mb-0">
+                            <a href="" class=" text-decoration-none">
+                                <li><i class="fa-brands fa-facebook-f"></i></li>
+                            </a>
+                            <a href="" class=" text-decoration-none">
+                                <li><i class="fa-brands fa-twitter"></i></li>
+                            </a>
+                            <a href="" class=" text-decoration-none">
+                                <li><i class="fa-brands fa-google-plus-g"></i></li>
+                            </a>
+                            <a href="" class=" text-decoration-none">
+                                <li><i class="fa-brands fa-pinterest"></i></li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+                <span>Copyright 2014 Company name. Designed by Themezy. All rights reserved</span>
+            </div>
+        </footer>
+        <!-- End footer -->
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
